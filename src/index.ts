@@ -9,7 +9,7 @@ export interface CdkCustomResourceExampleProps extends cdk.ResourceProps {
 }
 
 export class CustomResourceExample extends Construct {
-  public readonly customResourceResult: string;
+  public readonly customResourceResult: number;
 
   constructor(
     scope: Construct,
@@ -48,6 +48,8 @@ export class CustomResourceExample extends Construct {
       },
     );
 
-    this.customResourceResult = customResourceResult.getAttString('Result');
+    this.customResourceResult = Number(
+      customResourceResult.getAttString('Result'),
+    );
   }
 }
