@@ -18,13 +18,15 @@ exports.handler = function (event, context) {
   }
 
   try {
-    const multiplyResult = event.ResourceProperties.CustomResourceNumber * 2;
+    const multiplyResult = event.ResourceProperties.customResourceNumber * 2;
     responseData.Status = 'SUCCESS';
     responseData.Reason = 'Successfully multipled';
+    responseData['Data'] = {};
     responseData['Data']['Result'] = multiplyResult;
     console.log({ responseData });
     return responseData;
   } catch (error) {
+    console.log(error);
     responseData.Status = 'FAILURE';
     responseData.Reason = JSON.stringify(error);
     console.log({ responseData });
