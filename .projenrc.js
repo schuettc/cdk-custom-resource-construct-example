@@ -5,6 +5,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   cdkVersion: '2.3.0',
   defaultReleaseBranch: 'main',
   name: 'cdk-custom-resource-construct-example',
+  npmignoreEnabled: true,
+  releaseToNpm: true,
   repositoryUrl:
     'https://github.com/schuettc/cdk-custom-resource-construct-example.git',
 
@@ -13,4 +15,14 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
 });
+const common_exclude = [
+  'cdk.out',
+  'cdk.context.json',
+  'yarn-error.log',
+  'coverage',
+  'venv',
+  'node_modules',
+];
+project.gitignore.exclude(...common_exclude);
+project.npmignore.exclude(...common_exclude, 'image');
 project.synth();

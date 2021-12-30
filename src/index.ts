@@ -19,7 +19,6 @@ export class CustomResourceExample extends Construct {
     super(scope, id);
 
     const role = new iam.Role(this, 'CustomResourceRole', {
-      roleName: 'CustomeResourceRole',
       description: 'Custome Resource Construct Example',
       assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
       managedPolicies: [
