@@ -1094,10 +1094,10 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-aws-cdk-lib@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.1.0.tgz#2497484cfd4e2eeaba99b070bbfa54486d52ae34"
-  integrity sha512-W607G3aSrWpawpcqzIuUYKlU+grfvkbszyqikyVYqJgMHFCCQXq0S1ynPMzfQ49CwjlwZsu4LIsPM+dNR+Yj6g==
+aws-cdk-lib@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.3.0.tgz#9592e51f51d012e1e56f851700d1b8e9687eee93"
+  integrity sha512-fVQ7x+ahOmzcy5KCw+EaYp0II3igglJSpi/Rs4OyLrCxa7GBZ4G9iDu0IAPKjppw5IX3UshklmdfkEFP8d1b9w==
   dependencies:
     "@balena/dockerignore" "^1.0.2"
     case "1.6.3"
@@ -2094,7 +2094,7 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-import-resolver-node@*, eslint-import-resolver-node@^0.3.6:
+eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.6.tgz#4048b958395da89668252001dbd9eca6b83bacbd"
   integrity sha512-0En0w03NRVMn9Uiyn8YRPDKvWjxCWkslUEhGNTdGx15RvPJYQ+lbOlqrlNI2vEAs4pDYK4f/HN2TbDmk5TP0iw==
@@ -2102,7 +2102,7 @@ eslint-import-resolver-node@*, eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
-eslint-import-resolver-typescript@*:
+eslint-import-resolver-typescript@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-2.5.0.tgz#07661966b272d14ba97f597b51e1a588f9722f0a"
   integrity sha512-qZ6e5CFr+I7K4VVhQu3M/9xGv9/YmwsEXrsm3nimw8vWaVHRDrQRp26BgCypTxBp3vUp4o5aVEJRiy0F2DFddQ==
@@ -2122,7 +2122,7 @@ eslint-module-utils@^2.7.1:
     find-up "^2.1.0"
     pkg-dir "^2.0.0"
 
-eslint-plugin-import@*:
+eslint-plugin-import@^2.25.3:
   version "2.25.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.25.3.tgz#a554b5f66e08fb4f6dc99221866e57cfff824766"
   integrity sha512-RzAVbby+72IB3iOEL8clzPLzL3wpDrlwjsTBAQXgyp5SeTqqY+0bFubwuo+y/HLhNZcXV4XqTBO4LGsfyHIDXg==
@@ -3622,7 +3622,7 @@ jest-worker@^27.4.5:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jest@*:
+jest@^27.4.5:
   version "27.4.5"
   resolved "https://registry.yarnpkg.com/jest/-/jest-27.4.5.tgz#66e45acba44137fac26be9d3cc5bb031e136dc0f"
   integrity sha512-uT5MiVN3Jppt314kidCk47MYIRilJjA/l2mxwiuzzxGUeJIvA8/pDaJOAX5KWvjAo7SCydcW0/4WEtgbLMiJkg==
@@ -3702,7 +3702,7 @@ jsesc@^2.5.1:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
   integrity sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
 
-jsii-diff@*:
+jsii-diff@^1.50.0:
   version "1.50.0"
   resolved "https://registry.yarnpkg.com/jsii-diff/-/jsii-diff-1.50.0.tgz#61c9ba5d59ed17c15a45315b9b73068dd8c3adb8"
   integrity sha512-hyRXf8jNoBOK5e3tsQhzQs8wiR83FmRywUNGZGtAD/s52UTAnPb/V/DH52hY6pTUa08aLZEQbqpgwooOOe94hw==
@@ -3715,7 +3715,7 @@ jsii-diff@*:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@*:
+jsii-docgen@^4.2.25:
   version "4.2.25"
   resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.25.tgz#135e66ac5c6a04b1445eac9827ac73f2a8abb9ce"
   integrity sha512-eDPlgVHefgPXuyVFIcuZjxgnjrX0Cc52r/tmWh9ajAgSdilh+uFeH1MUepIYPh4tBaMHOrLaGSucTsaZrW1xCQ==
@@ -3758,7 +3758,7 @@ jsii-rosetta@^1.50.0:
     workerpool "^6.1.5"
     yargs "^16.2.0"
 
-jsii@*, jsii@1.50.0:
+jsii@1.50.0, jsii@^1.50.0:
   version "1.50.0"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.50.0.tgz#585232437fcf0a4edaa3c329de2d1c7d05765a3d"
   integrity sha512-7a9QXBe/MvOTGFpr5ASetxqrOd8Y6sdZo7Ts2UNJRQQWA+YS/hVpOuemnvdUImdo5u659gqdcXLsKy48QXiC/Q==
@@ -3804,7 +3804,7 @@ json-schema-traverse@^0.4.1:
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
   integrity sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==
 
-json-schema@*:
+json-schema@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/json-schema/-/json-schema-0.4.0.tgz#f7de4cf6efab838ebaeb3236474cbba5a1930ab5"
   integrity sha512-es94M3nTIfsEPisRafak+HDLfHXnKBhV3vU5eqPcS3flIWqcxJWgXHXiey3YrpaNsanY5ei1VoYEbOzijuq9BA==
@@ -4768,7 +4768,7 @@ progress@^2.0.0, progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@*:
+projen@^0.47.12:
   version "0.47.12"
   resolved "https://registry.yarnpkg.com/projen/-/projen-0.47.12.tgz#c1690a4f91d1f963eefde6e7e6804966d26c50be"
   integrity sha512-zGXZ8akSqV80J3LMz3Chq1NHOf1ZWG5fWpBYWPaL1tEdGMS54mQkBhN63BYGboc9bYPfOS9MANTpekbre/KGWQ==
@@ -5567,7 +5567,7 @@ trim-newlines@^3.0.0:
   resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==
 
-ts-jest@*:
+ts-jest@^27.1.2:
   version "27.1.2"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-27.1.2.tgz#5991d6eb3fd8e1a8d4b8f6de3ec0a3cc567f3151"
   integrity sha512-eSOiJOWq6Hhs6Khzk5wKC5sgWIXgXqOCiIl1+3lfnearu58Hj4QpE5tUhQcA3xtZrELbcvAGCsd6HB8OsaVaTA==
@@ -5659,7 +5659,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@*:
+typescript@^4.5.4:
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.4.tgz#a17d3a0263bf5c8723b9c52f43c5084edf13c2e8"
   integrity sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==
