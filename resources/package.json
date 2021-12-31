@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.89",
+    "aws-cloudformation-custom-resource": "^3.0.0",
+    "aws-sdk": "^2.1048.0"
+  }
+}
