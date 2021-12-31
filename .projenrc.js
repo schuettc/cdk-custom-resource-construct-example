@@ -4,9 +4,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'schuettc@amazon.com',
   cdkVersion: '2.3.0',
   defaultReleaseBranch: 'main',
+  peerDependencies: ['aws-cdk-lib'],
   name: 'cdk-custom-resource-construct-example',
   npmignoreEnabled: true,
-  releaseToNpm: true,
   repositoryUrl:
     'https://github.com/schuettc/cdk-custom-resource-construct-example.git',
 });
