@@ -8,6 +8,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   peerDependencies: ['aws-cdk-lib'],
   name: 'cdk-custom-resource-construct-example',
   license: 'MIT-0',
+  release: true,
   npmignoreEnabled: true,
   autoApproveOptions: {
     allowedUsernames: ['schuettc'],
