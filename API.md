@@ -44,17 +44,17 @@ new CustomResourceExample(scope: Construct, id: string, props: CdkCustomResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`customResourceResult`](#cdkcustomresourceconstructexamplecustomresourceexamplepropertycustomresourceresult)<span title="Required">*</span> | `number` | *No description.* |
+| [`customResourceResult`](#cdkcustomresourceconstructexamplecustomresourceexamplepropertycustomresourceresult)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
 ##### `customResourceResult`<sup>Required</sup> <a name="cdk-custom-resource-construct-example.CustomResourceExample.property.customResourceResult" id="cdkcustomresourceconstructexamplecustomresourceexamplepropertycustomresourceresult"></a>
 
 ```typescript
-public readonly customResourceResult: number;
+public readonly customResourceResult: string;
 ```
 
-- *Type:* `number`
+- *Type:* `string`
 
 ---
 
