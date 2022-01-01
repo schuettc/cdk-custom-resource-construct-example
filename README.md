@@ -30,7 +30,6 @@ Create an Access Token within npm to allow GitHub to publish to npm. Add this Ac
 npx projen build
 git add .
 git commit -m 'commit comment'
-npx projen release
 git push
 ```
 

@@ -10,6 +10,13 @@ const project = new awscdk.AwsCdkConstructLibrary({
   license: 'MIT-0',
   release: true,
   npmignoreEnabled: true,
+  depsUpgradeOptions: {
+    ignoreProjen: false,
+    workflowOptions: {
+      labels: ['auto-approve', 'auto-merge'],
+      secret: 'PROJEN_GITHUB_TOKEN',
+    },
+  },
   autoApproveOptions: {
     allowedUsernames: ['schuettc'],
     secret: 'GITHUB_TOKEN',
