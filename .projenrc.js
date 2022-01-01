@@ -9,6 +9,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'cdk-custom-resource-construct-example',
   license: 'MIT-0',
   release: true,
+  majorVersion: 1,
   npmignoreEnabled: true,
   depsUpgradeOptions: {
     ignoreProjen: false,
