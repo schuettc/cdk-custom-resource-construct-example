@@ -60,7 +60,10 @@
     "constructs": "^10.0.5"
   },
   "keywords": [
-    "cdk"
+    "aws",
+    "cdk",
+    "custom resource",
+    "example"
   ],
   "main": "lib/index.js",
   "license": "MIT-0",
