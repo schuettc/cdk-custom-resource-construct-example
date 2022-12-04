@@ -34,6 +34,9 @@ export class CustomResourceExample extends Construct {
       'customResourceLambda',
       {
         entry: 'src/resources/index.ts',
+        bundling: {
+          externalModules: ['aws-lambda', '@types/aws-lambda'],
+        },
         handler: 'lambdaHandler',
         runtime: Runtime.NODEJS_18_X,
         role: customResourceRole,
