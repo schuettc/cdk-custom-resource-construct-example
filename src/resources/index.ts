@@ -17,6 +17,12 @@ export const lambdaHandler = async (
     PhysicalResourceId: context.logGroupName,
   };
 
+  if (event.RequestType == 'Delete') {
+    response.Status = 'SUCCESS';
+    response.Data = { Result: 'None' };
+    return response;
+  }
+
   try {
     const multiplyResult = event.ResourceProperties.customResourceNumber * 2;
     response.Status = 'SUCCESS';
