@@ -1,3 +1,4 @@
+import * as path from 'path';
 import { Duration, CustomResource, ResourceProps } from 'aws-cdk-lib';
 import { ServicePrincipal, Role, ManagedPolicy } from 'aws-cdk-lib/aws-iam';
 import { Architecture, Runtime } from 'aws-cdk-lib/aws-lambda';
@@ -33,7 +34,7 @@ export class CustomResourceExample extends Construct {
       this,
       'customResourceLambda',
       {
-        entry: 'src/resources/index.ts',
+        entry: path.join(__dirname, '../src/resources/index.ts'),
         bundling: {
           externalModules: ['aws-lambda', '@types/aws-lambda'],
         },
