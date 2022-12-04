@@ -14,6 +14,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   release: true,
   majorVersion: 1,
   npmignoreEnabled: true,
+  devDeps: ['@types/aws-lambda', 'aws-lambda'],
   depsUpgradeOptions: {
     ignoreProjen: false,
     workflowOptions: {
