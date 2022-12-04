@@ -34,7 +34,7 @@ export class CustomResourceExample extends Construct {
       this,
       'customResourceLambda',
       {
-        entry: path.join(__dirname, '../src/resources/index.ts'),
+        entry: path.join(__dirname, '../lib/resources/index.js'),
         bundling: {
           externalModules: ['aws-lambda', '@types/aws-lambda'],
         },
