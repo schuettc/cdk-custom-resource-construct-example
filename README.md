@@ -6,11 +6,13 @@ This is an example of how to create a Custom Resource Construct for CDK.
 
 ```
 ├── src
-│   ├── index.ts
-├── resources
-│   ├── index.js
+│   ├── index.ts
+│   └── resources
+│       ├── index.ts
+│       ├── package.json
+│       └── yarn.lock
 ├── test
-│   ├── customResource.test.ts
+│   └── customResource.test.ts
 └── .projenrc.js
 ```
 

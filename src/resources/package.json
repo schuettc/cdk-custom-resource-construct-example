@@ -1,0 +1,9 @@
+{
+  "name": "resources",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.109"
+  }
+}

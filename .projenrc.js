@@ -5,7 +5,7 @@ const AUTOMATION_TOKEN = 'PROJEN_GITHUB_TOKEN';
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Court Schuett',
   authorAddress: 'schuettc@amazon.com',
-  cdkVersion: '2.3.0',
+  cdkVersion: '2.53.0',
   keywords: ['cdk', 'example', 'aws', 'custom resource'],
   defaultReleaseBranch: 'main',
   peerDependencies: ['aws-cdk-lib'],
