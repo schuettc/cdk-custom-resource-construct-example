@@ -4,6 +4,7 @@
   "main": "index.ts",
   "license": "MIT",
   "dependencies": {
-    "@types/aws-lambda": "^8.10.109"
+    "@types/aws-lambda": "^8.10.109",
+    "aws-lambda": "^1.0.7"
   }
 }
