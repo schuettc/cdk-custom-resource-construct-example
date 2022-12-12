@@ -1,3 +1,5 @@
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=443233107)
+
 # CDK Custom Resource Construct Example
 
 This is an example of how to create a Custom Resource Construct for CDK.
