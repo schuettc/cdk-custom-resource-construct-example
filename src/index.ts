@@ -29,19 +29,6 @@ export class CustomResourceExample extends Construct {
       ],
     });
 
-    // const customResourceLambda = new NodejsFunction(
-    //   this,
-    //   'customResourceLambda',
-    //   {
-    //     entry: path.join(__dirname, 'resources'),
-    //     handler: 'handler',
-    //     runtime: Runtime.NODEJS_18_X,
-    //     role: customResourceRole,
-    //     architecture: Architecture.ARM_64,
-    //     timeout: Duration.seconds(60),
-    //   },
-    // );
-
     const customResourceLambda = new CustomResourceFunction(
       this,
       'customResourceLambda',
