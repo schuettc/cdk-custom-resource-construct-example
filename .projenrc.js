@@ -8,7 +8,13 @@ const project = new awscdk.AwsCdkConstructLibrary({
   cdkVersion: '2.53.0',
   keywords: ['cdk', 'example', 'aws', 'custom resource'],
   defaultReleaseBranch: 'main',
-  peerDependencies: ['aws-cdk-lib'],
+  lambdaOptions: {
+    runtime: awscdk.LambdaRuntime.NODEJS_18_X,
+    bundlingOptions: {
+      externals: ['aws-sdk'],
+      sourcemap: true,
+    },
+  },
   name: 'cdk-custom-resource-construct-example',
   license: 'MIT-0',
   release: true,

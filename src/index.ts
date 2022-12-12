@@ -1,10 +1,9 @@
-import * as path from 'path';
 import { Duration, CustomResource, ResourceProps } from 'aws-cdk-lib';
 import { ServicePrincipal, Role, ManagedPolicy } from 'aws-cdk-lib/aws-iam';
-import { Architecture, Runtime } from 'aws-cdk-lib/aws-lambda';
-import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
+import { Architecture } from 'aws-cdk-lib/aws-lambda';
 import { Provider } from 'aws-cdk-lib/custom-resources';
 import { Construct } from 'constructs';
+import { CustomResourceFunction } from './custom-resource-function';
 
 export interface CdkCustomResourceExampleProps extends ResourceProps {
   readonly customResourceNumber: number;
@@ -30,16 +29,23 @@ export class CustomResourceExample extends Construct {
       ],
     });
 
-    const customResourceLambda = new NodejsFunction(
+    // const customResourceLambda = new NodejsFunction(
+    //   this,
+    //   'customResourceLambda',
+    //   {
+    //     entry: path.join(__dirname, 'resources'),
+    //     handler: 'handler',
+    //     runtime: Runtime.NODEJS_18_X,
+    //     role: customResourceRole,
+    //     architecture: Architecture.ARM_64,
+    //     timeout: Duration.seconds(60),
+    //   },
+    // );
+
+    const customResourceLambda = new CustomResourceFunction(
       this,
       'customResourceLambda',
       {
-        entry: path.join(__dirname, '../lib/resources/index.js'),
-        bundling: {
-          externalModules: ['aws-lambda', '@types/aws-lambda'],
-        },
-        handler: 'lambdaHandler',
-        runtime: Runtime.NODEJS_18_X,
         role: customResourceRole,
         architecture: Architecture.ARM_64,
         timeout: Duration.seconds(60),

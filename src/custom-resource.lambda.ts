@@ -4,7 +4,7 @@ import {
   Context,
 } from 'aws-lambda';
 
-export const lambdaHandler = async (
+export const handler = async (
   event: CdkCustomResourceEvent,
   context: Context,
 ): Promise<CdkCustomResourceResponse> => {
