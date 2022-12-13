@@ -55,7 +55,7 @@
       "description": "Create a JavaScript bundle from src/custom-resource.lambda.ts",
       "steps": [
         {
-          "exec": "esbuild --bundle src/custom-resource.lambda.ts --target=\"node14\" --platform=\"node\" --outfile=\"assets/custom-resource.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:aws-sdk --sourcemap"
+          "exec": "esbuild --bundle src/custom-resource.lambda.ts --target=\"node18\" --platform=\"node\" --outfile=\"assets/custom-resource.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:aws-sdk --sourcemap"
         }
       ]
     },
@@ -64,7 +64,7 @@
       "description": "Continuously update the JavaScript bundle from src/custom-resource.lambda.ts",
       "steps": [
         {
-          "exec": "esbuild --bundle src/custom-resource.lambda.ts --target=\"node14\" --platform=\"node\" --outfile=\"assets/custom-resource.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:aws-sdk --sourcemap --watch"
+          "exec": "esbuild --bundle src/custom-resource.lambda.ts --target=\"node18\" --platform=\"node\" --outfile=\"assets/custom-resource.lambda/index.js\" --tsconfig=\"tsconfig.dev.json\" --external:aws-sdk --sourcemap --watch"
         }
       ]
     },
