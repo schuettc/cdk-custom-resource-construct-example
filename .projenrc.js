@@ -18,6 +18,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'cdk-custom-resource-construct-example',
   license: 'MIT-0',
   release: true,
+  workflowNodeVersion: '16.x',
   majorVersion: 1,
   npmignoreEnabled: true,
   devDeps: ['@types/aws-lambda', 'aws-lambda', 'esbuild'],
