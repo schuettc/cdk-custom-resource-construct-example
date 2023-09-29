@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="1" errors="0" time="2.851">
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-09-26T03:45:56" time="2.802" tests="1">
+    <testcase classname=" test Create" name=" test Create" time="0.004">
+      <failure>Error: cannot find node_modules/cdk-custom-resource-construct-example/assets/resources/index.js
+    at new CustomResourceProvider (/Users/courtschuett/Documents/GitHub/schuettc/cdk-custom-resource-construct-example/node_modules/aws-cdk-lib/core/lib/custom-resource-provider/custom-resource-provider.js:1:2802)
+    at Function.getOrCreateProvider (/Users/courtschuett/Documents/GitHub/schuettc/cdk-custom-resource-construct-example/node_modules/aws-cdk-lib/core/lib/custom-resource-provider/custom-resource-provider.js:1:2248)
+    at new CustomResourceExample (/Users/courtschuett/Documents/GitHub/schuettc/cdk-custom-resource-construct-example/src/index.ts:24:59)
+    at Object.&lt;anonymous&gt; (/Users/courtschuett/Documents/GitHub/schuettc/cdk-custom-resource-construct-example/test/customResource.test.ts:7:3)
+    at Promise.then.completed (/Users/courtschuett/Documents/GitHub/schuettc/cdk-custom-resource-construct-example/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/courtschuett/Documents/GitHub/schuettc/cdk-custom-resource-construct-example/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/courtschuett/Documents/GitHub/schuettc/cdk-custom-resource-construct-example/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/courtschuett/Documents/GitHub/schuettc/cdk-custom-resource-construct-example/node_modules/jest-circus/build/run.js:155:3)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

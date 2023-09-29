@@ -1,9 +1,11 @@
-import { Duration, CustomResource, ResourceProps } from 'aws-cdk-lib';
-import { ServicePrincipal, Role, ManagedPolicy } from 'aws-cdk-lib/aws-iam';
-import { Architecture } from 'aws-cdk-lib/aws-lambda';
-import { Provider } from 'aws-cdk-lib/custom-resources';
+import {
+  Duration,
+  CustomResource,
+  ResourceProps,
+  CustomResourceProvider,
+  CustomResourceProviderRuntime,
+} from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import { CustomResourceFunction } from './custom-resource-function';
 
 export interface CdkCustomResourceExampleProps extends ResourceProps {
   readonly customResourceNumber: number;
@@ -19,31 +21,25 @@ export class CustomResourceExample extends Construct {
   ) {
     super(scope, id);
 
-    const customResourceRole = new Role(this, 'CustomResourceRole', {
-      description: 'Custom Resource Construct Example',
-      assumedBy: new ServicePrincipal('lambda.amazonaws.com'),
-      managedPolicies: [
-        ManagedPolicy.fromAwsManagedPolicyName(
-          'service-role/AWSLambdaBasicExecutionRole',
-        ),
-      ],
-    });
-
-    const customResourceLambda = new CustomResourceFunction(
+    const customResourceProvider = CustomResourceProvider.getOrCreateProvider(
       this,
-      'customResourceLambda',
+      'Custom::Resource',
       {
-        role: customResourceRole,
-        architecture: Architecture.ARM_64,
+        codeDirectory:
+          'node_modules/cdk-custom-resource-construct-example/assets/resources/lambda',
+        runtime: CustomResourceProviderRuntime.NODEJS_18_X,
         timeout: Duration.seconds(60),
-      },
-    );
-
-    const customResourceProvider = new Provider(
-      this,
-      'customResourceProvider',
-      {
-        onEventHandler: customResourceLambda,
+        policyStatements: [
+          {
+            Effect: 'Allow',
+            Action: [
+              'logs:CreateLogGroup',
+              'logs:CreateLogStream',
+              'logs:PutLogEvents',
+            ],
+            Resource: '*',
+          },
+        ],
       },
     );
 
