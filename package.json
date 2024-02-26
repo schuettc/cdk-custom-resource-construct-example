@@ -36,25 +36,23 @@
     "organization": false
   },
   "devDependencies": {
-    "@types/node": "^16",
+    "@types/node": "^16 <= 16.18.78",
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
     "aws-cdk-lib": "2.96.0",
     "constructs": "10.0.5",
-    "esbuild": "^0.19.4",
+    "esbuild": "^0.20.1",
     "eslint": "^8",
-    "eslint-import-resolver-node": "^0.3.9",
     "eslint-import-resolver-typescript": "^2.7.1",
-    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-import": "^2.29.1",
     "jsii": "1.x",
-    "jsii-diff": "^1.89.0",
+    "jsii-diff": "^1.94.0",
     "jsii-docgen": "^4.2.44",
-    "jsii-pacmak": "^1.89.0",
+    "jsii-pacmak": "^1.94.0",
     "jsii-rosetta": "1.x",
-    "npm-check-updates": "^16",
-    "projen": "^0.73.35",
+    "projen": "^0.80.2",
     "standard-version": "^9",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "^4.9.5",
     "yalc": "^1.0.0-pre.53"
   },
@@ -63,7 +61,7 @@
     "constructs": "^10.0.5"
   },
   "dependencies": {
-    "@types/aws-lambda": "^8.10.122",
+    "@types/aws-lambda": "^8.10.134",
     "aws-lambda": "^1.0.7"
   },
   "bundledDependencies": [

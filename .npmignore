@@ -28,3 +28,5 @@ coverage
 venv
 node_modules
 image
+/.gitattributes
+/.projenrc.ts
