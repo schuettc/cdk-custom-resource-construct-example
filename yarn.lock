@@ -512,14 +512,16 @@ acorn-jsx@^5.3.2:
   integrity sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==
 
 acorn-walk@^8.1.1:
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.3.2.tgz#7703af9415f1b6db9315d6895503862e231d34aa"
-  integrity sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==
+  version "8.3.3"
+  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.3.3.tgz#9caeac29eefaa0c41e3d4c65137de4d6f34df43e"
+  integrity sha512-MxXdReSRhGO7VlFe1bRG/oI7/mdLV9B9JJT0N8vZOhF7gFRR5l3M8W9G8JxmKV+JC5mGqJ0QvqfSOLsCPa4nUw==
+  dependencies:
+    acorn "^8.11.0"
 
-acorn@^8.4.1, acorn@^8.9.0:
-  version "8.11.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.11.3.tgz#71e0b14e13a4ec160724b38fb7b0f233b1b81d7a"
-  integrity sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==
+acorn@^8.11.0, acorn@^8.4.1, acorn@^8.9.0:
+  version "8.12.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.12.0.tgz#1627bfa2e058148036133b8d9b51a700663c294c"
+  integrity sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==
 
 add-stream@^1.0.0:
   version "1.0.0"
@@ -710,9 +712,9 @@ aws-lambda@^1.0.7:
     watchpack "^2.0.0-beta.10"
 
 aws-sdk@^2.814.0:
-  version "2.1641.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1641.0.tgz#fc515dfb1cef3106a5ce90d370016442483b8d0a"
-  integrity sha512-XkKbVu4VKFjY7wsTSWEYxBR2fVN8gUovAvRrHuJt9mMDdDh/wPkBZ04ayGT+Bd5bgmmIeE3sk3UMokKQEudJEQ==
+  version "2.1642.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1642.0.tgz#d85e369258a4ba8fb6241bb8af3bd6c893ed51ee"
+  integrity sha512-xTqRcLbb7F3GadFQN1+m25nP1twA2Lmlmhpt5gbYb3VCR91lb+c9EnsEr7U60zLv4AR2ip/GkDtSpKS/EzLOzA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
