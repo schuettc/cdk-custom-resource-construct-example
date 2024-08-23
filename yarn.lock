@@ -717,9 +717,9 @@ aws-lambda@^1.0.7:
     watchpack "^2.0.0-beta.10"
 
 aws-sdk@^2.814.0:
-  version "2.1680.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1680.0.tgz#02f4007deb7b3729be72699098d185b51330a072"
-  integrity sha512-XHNyhvVB49DC7Ea7+Gsvy4B+xP7tyry6Gw3b9g/DcilA1xmxxRzu8VE9GJ2rP4jYMc/TkX9FHkp5WLo57sITZA==
+  version "2.1681.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1681.0.tgz#2b4252bef42ad6c3036a58d0f1405b76edef7413"
+  integrity sha512-oeCr0muJraT+g7ceTMlJcidVayPMfT69EEvDIWMbeBIHqbLOJVtpsF577VZJNEh2Zkj+8DivR69kWdu+Y9JSyQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -2941,10 +2941,10 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-projen@^0.85.2:
-  version "0.85.2"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.85.2.tgz#5e5ac64d4c37b089d3d17adc22e0ec418e2e0a31"
-  integrity sha512-YTEC/MjrnPR+regYBl3CR41+eL7s43DjBKfxZxndTY59m1WjXpTJVzv846nU59dKHqmXf4MyITHC67gs4hgWdg==
+projen@^0.86.0:
+  version "0.86.0"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.86.0.tgz#7141b03ac6837dc7f902ffe08558424f74fefe1c"
+  integrity sha512-7iqeGd2FdTInE/PVuWFZzjOqsQL8dLDdn54H3mK5CIYQqu9EAjrdMqDOHFZjDrNUz2bbau74jWCQW4tasAznOQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
